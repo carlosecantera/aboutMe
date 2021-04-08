@@ -76,7 +76,7 @@ function work1(){
     alert('I work for Apple');
   }
 }
-// let guessAge(){}
+// let guessAge(){
 // let myAge = prompt('How old am I? Enter a number.');
 // console.log(myAge);
 
