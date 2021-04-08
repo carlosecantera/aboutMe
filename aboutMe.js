@@ -1,67 +1,80 @@
 'use strict';
 
 alert ('I\'m Alive!');
+function userName1() {
+  let userName =prompt('What is your name?');
+  console.log(userName);
 
-let userName =prompt('What is your name?');
-console.log(userName);
+  alert('Welcome, ' + userName + ' It\'s nice to meet you!');
 
-alert('Welcome, ' + userName + ' It\'s nice to meet you!');
-
-alert('Let\'s see how well you know me ' + userName + '!');
-
-let whoAmI = prompt('Do you know my name? Please enter yes or no.');
-console.log(whoAmI);
-
-
-if (whoAmI === 'yes'){
-  alert('Of course you do!');
-} else {
-  alert('Look at my video and you\'ll see it!');
+  alert('Let\'s see how well you know me ' + userName + '!');
 }
 
+function whoami1(){
+  let whoAmI = prompt('Do you know my name? Please enter yes or no.');
+  console.log(whoAmI);
 
-let myHobby = prompt('Do you know my favorite hobby? yes or no?');
-console.log(myHobby);
 
-if (myHobby === 'yes'){
-  alert('Tell me!');
-} else {
-  alert('Guess!');
+  if (whoAmI === 'yes'){
+    alert('Of course you do!');
+  } else {
+    alert('Look at my video and you\'ll see it!');
+  }
 }
 
-let married = prompt('Am I married? yes or no?');
-console.log(married);
+function hobby(){
+  let myHobby = prompt('Do you know my favorite hobby? yes or no?');
+  console.log(myHobby);
 
-if (married === 'yes'){
-  alert('Correct I have been married for over 3 years!');
-} else {
-  alert('Incorrect I am married!');
+  if (myHobby === 'yes'){
+    alert('Tell me!');
+  } else {
+    alert('Guess!');
+  }
 }
 
-let kiddos = prompt('Do I have any kiddos? yes or no?');
-console.log(kiddos);
+function married1(){
+  let married = prompt('Am I married? yes or no?');
+  console.log(married);
 
-if (kiddos === 'yes'){
-  alert('You are correct I have a ten year old son!');
-} else {
-  alert('You are wrong I do have a kiddo!');
-}
-let travel = prompt('Do you know how many countries I have traveled to? yes or no?');
-console.log(travel);
-
-if (travel === 'yes'){
-  alert('How could you possibly know that?');
-} else {
-  alert('Well let me tell you, eleven countries and counting.');
+  if (married === 'yes'){
+    alert('Correct I have been married for over 3 years!');
+  } else {
+    alert('Incorrect I am married!');
+  }
 }
 
-let work = prompt('Do you know where I work? yes or no?');
-console.log(work);
+function kid(){
+  let kiddos = prompt('Do I have any kiddos? yes or no?');
+  console.log(kiddos);
 
-if (work === 'yes'){
-  alert('You know too much about me!');
-} else {
-  alert('I work for Apple');
+  if (kiddos === 'yes'){
+    alert('You are correct I have a ten year old son!');
+  } else {
+    alert('You are wrong I do have a kiddo!');
+  }
+}
+
+function travel1(){
+  let travel = prompt('Do you know how many countries I have traveled to? yes or no?');
+  console.log(travel);
+
+  if (travel === 'yes'){
+    alert('How could you possibly know that?');
+  } else {
+    alert('Well let me tell you, eleven countries and counting.');
+  }
+}
+
+function work1(){
+  let work = prompt('Do you know where I work? yes or no?');
+  console.log(work);
+
+  if (work === 'yes'){
+    alert('You know too much about me!');
+  } else {
+    alert('I work for Apple');
+  }
 }
 // let guessAge(){}
 // let myAge = prompt('How old am I? Enter a number.');
@@ -88,20 +101,30 @@ let guesses = 5;
 
 let correctGuess = false;
 
-while (guesses > 0 && correctGuess === false) {
-  let userGuess =  prompt('Name a country I\'ve visited outside of the USA.');
-  console.log(guesses, 'user guess');
+function countryguess(){
+  while (guesses > 0 && correctGuess === false) {
+    let userGuess =  prompt('Name a country I\'ve visited outside of the USA.');
+    console.log(guesses, 'user guess');
 
-  for (let index = 0; index < country.length; index++){
-    console.log(country[index], 'this is the country at ', index);
-    if (userGuess === country[index]) {
-      console.log('correct');
-      alert('You are right!');
-      correctGuess = true;
+    for (let index = 0; index < country.length; index++){
+      console.log(country[index], 'this is the country at ', index);
+      if (userGuess === country[index]) {
+        console.log('correct');
+        alert('You are right!');
+        correctGuess = true;
+      }
     }
+    if (correctGuess === false) {
+      alert('You are wrong, try again!');
+    }
+    guesses--;
   }
-  if (correctGuess === false) {
-    alert('You are wrong, try again!');
-  }
-  guesses--;
 }
+userName1();
+whoami1();
+hobby();
+married1();
+kid();
+travel1();
+work1();
+countryguess();

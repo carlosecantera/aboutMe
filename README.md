@@ -11,3 +11,7 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Reflections and Comments
 * 7 Apr added List and loop to my page.*
+
+Page was adjusted per Lab 4 to have:
+- Alex Vogt as the Driver
+- Carlos De La Cantera as the Navigator
