@@ -9,7 +9,7 @@ function userName1() {
 
   alert('Let\'s see how well you know me ' + userName + '!');
 }
-
+//whats my name
 function whoami1(){
   let whoAmI = prompt('Do you know my name? Please enter yes or no.');
   console.log(whoAmI);
@@ -21,7 +21,7 @@ function whoami1(){
     alert('Look at my video and you\'ll see it!');
   }
 }
-
+//what is my hobby
 function hobby(){
   let myHobby = prompt('Do you know my favorite hobby? yes or no?');
   console.log(myHobby);
@@ -32,7 +32,7 @@ function hobby(){
     alert('Guess!');
   }
 }
-
+//am i married
 function married1(){
   let married = prompt('Am I married? yes or no?');
   console.log(married);
@@ -43,7 +43,7 @@ function married1(){
     alert('Incorrect I am married!');
   }
 }
-
+// do i have a child
 function kid(){
   let kiddos = prompt('Do I have any kiddos? yes or no?');
   console.log(kiddos);
@@ -54,7 +54,7 @@ function kid(){
     alert('You are wrong I do have a kiddo!');
   }
 }
-
+//travel
 function travel1(){
   let travel = prompt('Do you know how many countries I have traveled to? yes or no?');
   console.log(travel);
@@ -65,7 +65,7 @@ function travel1(){
     alert('Well let me tell you, eleven countries and counting.');
   }
 }
-
+//where do i work
 function work1(){
   let work = prompt('Do you know where I work? yes or no?');
   console.log(work);
@@ -96,11 +96,12 @@ function work1(){
 //   alert('Not that old yet! Try again!');
 // }
 
+// Array
 let country = ['Canada', 'Mexico', 'Cuba', 'Puerto Rico', 'Grand Caymen Islands', 'Panama', 'Japan', 'China', 'Korea', 'Kuwait', 'Iraq'];
 let guesses = 5;
 
 let correctGuess = false;
-
+//country guess
 function countryguess(){
   while (guesses > 0 && correctGuess === false) {
     let userGuess =  prompt('Name a country I\'ve visited outside of the USA.');
