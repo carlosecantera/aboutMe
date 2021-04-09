@@ -76,26 +76,30 @@ function work1(){
     alert('I work for Apple');
   }
 }
-// let guessAge(){
-// let myAge = prompt('How old am I? Enter a number.');
-// console.log(myAge);
-
-// let age =('39' || 39);
-// let age2 =('38' || 38);
-// let age3 =('40' || 40);
-
-// if (myAge === age){
-//   alert('You are correct!');
-// }
-
-// else if (myAge <= age2);{
-//   alert('you are too kind but I\'m older than that. Try again!');
-// }
-
-// else if (myAge >= age3);{
-//   alert('Not that old yet! Try again!');
-// }
-
+function guessAge(){
+  //start loop here most guesses is 5 if user gets correct answer stop asking
+  let age ='39';
+  let stop=false;
+  let guesses = 5; 
+  while (guesses > 0 && stop === false){
+    let myAge = prompt('How old am I? Enter a number.');
+    console.log(myAge);
+    if (myAge === age){
+      alert('You are correct!'); //they got it right stop the loop
+      stop = true;
+    }
+  
+    else if (myAge < age){
+      alert('you are too kind but I\'m older than that. Try again!');
+    }
+  
+    else if (myAge > age){
+      alert('Not that old yet! Try again!');
+    }
+    guesses --;
+  }
+//We need to give user 5 guesses
+}
 // Array
 let country = ['Canada', 'Mexico', 'Cuba', 'Puerto Rico', 'Grand Caymen Islands', 'Panama', 'Japan', 'China', 'Korea', 'Kuwait', 'Iraq'];
 let guesses = 5;
@@ -129,3 +133,4 @@ kid();
 travel1();
 work1();
 countryguess();
+guessAge();
