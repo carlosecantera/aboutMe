@@ -3,6 +3,7 @@ body { background-color: bisque; font-family: cursive; color: black;}
 img {
   width: 300px;
   height: 300px;
+  float:inline-start
 }
 
 p{ font-weight: bold;}
